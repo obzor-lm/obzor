@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar - Zostań Ekspertem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">WebinarPro</div>
+                <ul class="nav-links">
+                    <li><a href="#about">O webinarze</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#register">Rejestracja</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Odkryj Sekrety Sukcesu</h1>
+                <p class="subtitle">Bezpłatny webinar, który zmieni Twoje podejście do biznesu</p>
+                <div class="webinar-date">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span>15 listopada 2025 | 18:00</span>
+                </div>
+                <div id="countdown" class="countdown">
+                    <div class="countdown-item">
+                        <span id="days" class="countdown-value">00</span>
+                        <span class="countdown-label">Dni</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours" class="countdown-value">00</span>
+                        <span class="countdown-label">Godzin</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes" class="countdown-value">00</span>
+                        <span class="countdown-label">Minut</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds" class="countdown-value">00</span>
+                        <span class="countdown-label">Sekund</span>
+                    </div>
+                </div>
+                <a href="#register" class="cta-button">Zapisz się za darmo</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+                        <circle cx="100" cy="100" r="80" stroke="currentColor" stroke-width="2" opacity="0.2"/>
+                        <path d="M100 40 L100 100 L140 140" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="100" cy="100" r="5" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>O czym będziemy mówić?</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Strategia</h3>
+                    <p>Poznaj sprawdzone metody budowania skutecznej strategii biznesowej</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Rozwój</h3>
+                    <p>Dowiedz się, jak skalować swój biznes i osiągać lepsze wyniki</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>Innowacje</h3>
+                    <p>Wykorzystaj najnowsze trendy i technologie w swoim biznesie</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="agenda" class="agenda">
+            <h2>Program webinaru</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">18:00 - 18:15</div>
+                    <div class="timeline-content">
+                        <h3>Powitanie i wprowadzenie</h3>
+                        <p>Poznanie uczestników i omówienie celów webinaru</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">18:15 - 18:45</div>
+                    <div class="timeline-content">
+                        <h3>Kluczowe strategie sukcesu</h3>
+                        <p>Prezentacja sprawdzonych metod i case studies</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">18:45 - 19:15</div>
+                    <div class="timeline-content">
+                        <h3>Warsztat praktyczny</h3>
+                        <p>Ćwiczenia i implementacja poznanych technik</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">19:15 - 19:30</div>
+                    <div class="timeline-content">
+                        <h3>Sesja Q&A</h3>
+                        <p>Odpowiedzi na pytania uczestników</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="register" class="register">
+            <div class="register-container">
+                <h2>Zapisz się już teraz!</h2>
+                <p class="register-subtitle">Miejsca są ograniczone. Nie przegap tej okazji!</p>
+                <form id="registration-form" class="registration-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Imię i nazwisko" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Adres e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Numer telefonu (opcjonalnie)">
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">Akceptuję regulamin i wyrażam zgodę na przetwarzanie danych osobowych</label>
+                    </div>
+                    <button type="submit" class="submit-button">Zarejestruj się</button>
+                </form>
+                <div id="success-message" class="success-message" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>Dziękujemy za rejestrację!</h3>
+                    <p>Link do webinaru zostanie wysłany na Twój adres e-mail.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>WebinarPro</h4>
+                    <p>Twój partner w rozwoju biznesu</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Email: kontakt@webinarpro.pl</p>
+                    <p>Tel: +48 123 456 789</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Śledź nas</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="LinkedIn">IN</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WebinarPro. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
