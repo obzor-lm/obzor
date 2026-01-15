@@ -286,6 +286,29 @@
         </div>
     </section>
 
+    <!-- Opinie Section -->
+    <section id="opinie" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Opinie o szkoleniach</h2>
+            <div class="testimonials-wrapper">
+                <iframe
+                    id="szkolenia"
+                    width="100%"
+                    src="https://app.easy.tools/walls/szkolenia"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    frameborder="0"
+                    scrolling="no"
+                ></iframe>
+                <script>
+                    window.addEventListener("message", (e) => {
+                        !!e.data.frameHeight && e.data.wallUuid === "szkolenia" && (document.getElementById("szkolenia").style.height = e.data.frameHeight);
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
     <!-- Registration Section -->
     <section id="register" class="register-section">
         <div class="container">
