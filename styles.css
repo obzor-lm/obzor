@@ -568,6 +568,8 @@ section {
 
 .register-cta-wrapper {
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .cta-large {
