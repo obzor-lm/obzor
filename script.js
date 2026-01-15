@@ -27,52 +27,6 @@ function updateCountdown() {
     setInterval(update, 1000);
 }
 
-// Form Submission
-function handleFormSubmission() {
-    const form = document.getElementById('registration-form');
-    const successMessage = document.getElementById('success-message');
-
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // Get form data
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            phone: document.getElementById('phone').value,
-            consent: document.getElementById('consent').checked
-        };
-
-        // Validate form
-        if (!formData.name || !formData.email || !formData.consent) {
-            alert('Proszę wypełnić wszystkie wymagane pola i zaakceptować regulamin.');
-            return;
-        }
-
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(formData.email)) {
-            alert('Proszę podać poprawny adres e-mail.');
-            return;
-        }
-
-        // Here you would typically send the data to a server
-        console.log('Registration data:', formData);
-
-        // Show success message
-        form.style.display = 'none';
-        successMessage.style.display = 'block';
-
-        // Optional: Send data to server
-        // fetch('/api/register', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(formData)
-        // });
-    });
-}
 
 // Smooth scrolling for navigation links
 function initSmoothScroll() {
@@ -118,7 +72,6 @@ function initScrollAnimations() {
 // Initialize all functions when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     updateCountdown();
-    handleFormSubmission();
     initSmoothScroll();
     initScrollAnimations();
 });
