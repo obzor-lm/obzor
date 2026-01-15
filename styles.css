@@ -543,6 +543,26 @@ section {
     font-weight: 500;
 }
 
+/* Testimonials Section */
+.testimonials-section {
+    background-color: var(--bg-light);
+    padding: 5rem 0;
+}
+
+.testimonials-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--bg-white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+}
+
+.testimonials-wrapper iframe {
+    border-radius: 0.5rem;
+    min-height: 400px;
+}
+
 /* Registration Section */
 .register-section {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -704,6 +724,10 @@ section {
 
     .registration-form {
         padding: 2rem;
+    }
+
+    .testimonials-wrapper {
+        padding: 1rem;
     }
 
     .footer-content {
