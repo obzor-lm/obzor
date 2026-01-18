@@ -1,7 +1,7 @@
 // Countdown Timer
 function updateCountdown() {
-    // Set target date - January 23, 2026 at 18:00
-    const targetDate = new Date('2026-01-23T18:00:00').getTime();
+    // Set target date - February 6, 2026 at 18:00
+    const targetDate = new Date('2026-02-06T18:00:00').getTime();
 
     function update() {
         const now = new Date().getTime();
