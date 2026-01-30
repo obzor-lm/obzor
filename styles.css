@@ -271,6 +271,57 @@ section {
     margin-bottom: 3rem;
 }
 
+/* Bonus Section */
+.bonus-section {
+    background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+    padding: 3rem 0;
+}
+
+.bonus-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-xl);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bonus-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.bonus-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.bonus-description {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.bonus-description strong {
+    color: #f59e0b;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.bonus-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--text-white);
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
 /* Problem Section */
 .problem-section {
     background-color: var(--bg-light);
@@ -730,6 +781,14 @@ section {
         padding: 1rem;
     }
 
+    .bonus-card {
+        padding: 2rem;
+    }
+
+    .bonus-title {
+        font-size: 1.5rem;
+    }
+
     .footer-content {
         grid-template-columns: 1fr;
     }
@@ -772,5 +831,21 @@ section {
 
     .registration-form {
         padding: 1.5rem;
+    }
+
+    .bonus-card {
+        padding: 1.5rem;
+    }
+
+    .bonus-title {
+        font-size: 1.25rem;
+    }
+
+    .bonus-description {
+        font-size: 1rem;
+    }
+
+    .bonus-description strong {
+        font-size: 1.25rem;
     }
 }
